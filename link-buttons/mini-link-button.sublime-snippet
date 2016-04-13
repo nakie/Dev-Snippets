@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+<a class="btn btn-xs btn-default" href="#" role="button">button</a>
+]]></content>
+	<tabTrigger>xs-link-button</tabTrigger>
+</snippet>

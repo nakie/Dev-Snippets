@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+<a class="btn btn-primary disabled" href="#" role="button">button</a>
+]]></content>
+	<tabTrigger>link-button:disabled</tabTrigger>
+</snippet>

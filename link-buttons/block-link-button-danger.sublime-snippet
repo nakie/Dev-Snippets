@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+<a class="btn btn-large btn-block btn-danger" href="#" role="button">button</a>
+]]></content>
+	<tabTrigger>block-link-button:danger</tabTrigger>
+</snippet>

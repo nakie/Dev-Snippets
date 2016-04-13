@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+<a class="btn btn-sm btn-warning" href="#" role="button">button</a>
+]]></content>
+	<tabTrigger>sm-link-button:warning</tabTrigger>
+</snippet>

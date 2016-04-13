@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+<textarea name="${1}" id="input${1/(\w+)/\u\1/g}" rows="${2:3}" ${3:required="required"}>${4}</textarea>
+]]></content>
+	<tabTrigger>textarea</tabTrigger>
+</snippet>

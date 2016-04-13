@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+<label for="${1:input-id}" >${2}</label>
+]]></content>
+	<tabTrigger>frm:label</tabTrigger>
+</snippet>

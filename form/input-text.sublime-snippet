@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+<input type="text" name="${1}" id="${1/(\w+)/\u\1/g}Txt"  ${2:value="${3}"} ${4:required="required"} ${5:pattern="${6}"} ${7:title="${8}"}>
+]]></content>
+	<tabTrigger>input:text</tabTrigger>
+</snippet>

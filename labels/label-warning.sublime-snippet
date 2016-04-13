@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+<span class="label label-warning">${1:Label}</span>
+]]></content>
+	<tabTrigger>label:warning</tabTrigger>
+</snippet>

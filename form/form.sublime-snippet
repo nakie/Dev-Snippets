@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+<form action="${1}" method="${2:POST}" role="form" class="formBody">
+	
+	${0}
+
+	<button type="${3:submit|button}" class="submitBtn">${4:Submit}</button>
+</form>
+]]></content>
+	<tabTrigger>frm</tabTrigger>
+</snippet>
