@@ -1,6 +1,9 @@
 <snippet>
 	<content><![CDATA[
-<input type="email" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${2:value="${3}"} ${4:required="required"} ${5:title="${6}"}>
+<div class="inputGroup">
+	<label for="${1/(\w+)\s/\u\1/g}Eml2" >${1}</label>	
+	<input type="email" name="${1/(\w+)/\u\1/g}Eml" id="${1/(\w+)/\u\1/g}Eml" class="form-control" ${2:value="${3}"} ${4:required="required"} ${5:title="${6}"}>
+</div>
 ]]></content>
-	<tabTrigger>input:email</tabTrigger>
+	<tabTrigger>i:email</tabTrigger>
 </snippet>
