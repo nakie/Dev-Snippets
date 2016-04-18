@@ -1,6 +1,12 @@
 <snippet>
 	<content><![CDATA[
-<textarea name="${1}" id="input${1/(\w+)/\u\1/g}" rows="${2:3}" ${3:required="required"}>${4}</textarea>
+<div class="inputGroup">
+	<label for="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}" >${1}</label>	
+	<textarea name="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}" id="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}" rows="${2:3}" ${3:required="required"}>${4}</textarea>
+</div>
+<!-- ./inputGroup -->
+
+
 ]]></content>
-	<tabTrigger>textarea</tabTrigger>
+	<tabTrigger>i:textarea</tabTrigger>
 </snippet>

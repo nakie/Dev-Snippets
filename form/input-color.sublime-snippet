@@ -1,6 +1,17 @@
 <snippet>
+	<!-- Snippet Purpose: Insert Color Picker Field -->
+	<!-- Regex Pattern -->
+	<!-- ${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g} -->
+	<!-- Converts Proper Spacing and Case into Camel Case -->
+	<!-- E.G.  Agent First Name becomes agentFirstName -->
+	<!-- This allows automatic creation of ID's and Field Names from Label!!!!!!!! -->
 	<content><![CDATA[
 <input type="color" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${2:value="${3}"} ${4:required="required"} ${5:title="${6}"}>
+
+<div class="inputGroup">
+	<label for="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Clr" >${1}</label>	
+	<input type="color" name="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Clr" id="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Clr" ${2:value="${3}"} ${4:required="required"} ${5:title="${6}"}>
+</div>
 ]]></content>
-	<tabTrigger>input:color</tabTrigger>
+	<tabTrigger>i:color</tabTrigger>
 </snippet>

@@ -1,6 +1,18 @@
 <snippet>
+	<!-- Snippet Purpose: Insert Email Form Field -->
+	<!-- Regex Pattern -->
+	<!-- ${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g} -->
+	<!-- Converts Proper Spacing/Case into Camel Case -->
+	<!-- E.G.  Agent First Name becomes agentFirstName -->
+	<!-- This allows automatic creation of ID's and Field Names from Label!!!!!!!! -->
+
 	<content><![CDATA[
-<input type="range" name="${1}" id="input${1/(\w+)/\u\1/g}" class="form-control" ${2:value="${3}"} ${4:min="{5}"} ${6:max="${7}"} ${8:step="${9}"} ${10:required="required"} ${11:title="${12}"}>
+<div class="inputGroup">
+	<label for="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Rng" >${1}</label>	
+	<input type="range" name="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Rng" id="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Rng" ${2:value="${3}"} ${4:min="${5}"} ${6:max="${7}"} ${8:step="${9}"} ${10:required="required"} >
+</div>
+<!-- ./inputGroup -->
+
 ]]></content>
-	<tabTrigger>input:range</tabTrigger>
+	<tabTrigger>i:range</tabTrigger>
 </snippet>

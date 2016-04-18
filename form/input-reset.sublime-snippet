@@ -1,6 +1,7 @@
 <snippet>
+
 	<content><![CDATA[
-<input type="reset" value="${1:Reset}" class="btn btn-default">
+<input type="reset" value="${1:Reset}" class="resetBtn">
 ]]></content>
-	<tabTrigger>input:reset</tabTrigger>
+	<tabTrigger>i:reset</tabTrigger>
 </snippet>

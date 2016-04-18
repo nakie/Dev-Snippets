@@ -1,11 +1,20 @@
 <snippet>
+	<!-- Snippet Purpose: Insert Raido Option Wrapper with a single checkbox -->
+	<!-- Regex Pattern -->
+	<!-- ${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g} -->
+	<!-- Converts Proper Spacing and Case into Camel Case -->
+	<!-- E.G.  Agent First Name becomes agentFirstName -->
+	<!-- This allows automatic creation of ID's and Field Names from Label!!!!!!!! -->
+
 	<content><![CDATA[
-<div class="radio">
+<div class="optionGroup">
 	<label>
-		<input type="radio" name="${1}" id="input${1/(\w+)/\u\1/g}" value="${2}" ${3:checked="checked"}>
-		${4:Radio Box}
+		<input type="radio" name="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Opt" id="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Opt" value="${2}">
+		${1:Radio Button}
 	</label>
+	${0}
 </div>
+
 ]]></content>
-	<tabTrigger>input:radio</tabTrigger>
+	<tabTrigger>i:radio</tabTrigger>
 </snippet>

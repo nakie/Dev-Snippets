@@ -1,9 +1,30 @@
 <snippet>
+	<!-- Snippet Purpose: Insert Email Form Field -->
+	<!-- Regex Pattern -->
+	<!-- ${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g} -->
+	<!-- Converts Proper Spacing/Case into Camel Case -->
+	<!-- E.G.  Agent First Name becomes agentFirstName -->
+	<!-- This allows automatic creation of ID's and Field Names from Label!!!!!!!! -->
+
 	<content><![CDATA[
 <div class="inputGroup">
-	<label for="${1/(\w+)\s/\u\1/g}Eml2" >${1}</label>	
-	<input type="email" name="${1/(\w+)/\u\1/g}Eml" id="${1/(\w+)/\u\1/g}Eml" class="form-control" ${2:value="${3}"} ${4:required="required"} ${5:title="${6}"}>
+	<label for="${1/(\w+)\s/\u\1/g}Eml" >${1}</label>	
+	<input type="email" name="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Eml" id="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Eml" ${2:value="${3}"} ${4:required="required"} >
 </div>
+
+${1/(\w+)\s/\u\1/g} - origional
+
+${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g} - Current Broken
+${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g} - testing Broken
+
+${1/^(\w)|(?:_(\w))/(?1\u$1:)(?2 \u$2:)/g} - Snail Case from Docs
+
+${1/^(\w)\s|(?:(\w)\s)/(?1\u$1:)(?2 \u$2:)/g} - Test2
+
+
+..${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}
+<!-- ./inputGroup -->
+
 ]]></content>
 	<tabTrigger>i:email</tabTrigger>
 </snippet>

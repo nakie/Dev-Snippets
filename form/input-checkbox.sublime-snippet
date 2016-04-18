@@ -1,11 +1,19 @@
 <snippet>
+	<!-- Snippet Purpose: Insert Checkbox Option Wrapper with a single checkbox -->
+	<!-- Regex Pattern -->
+	<!-- ${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g} -->
+	<!-- Converts Proper Spacing and Case into Camel Case -->
+	<!-- E.G.  Agent First Name becomes agentFirstName -->
+	<!-- This allows automatic creation of ID's and Field Names from Label!!!!!!!! -->
+
 	<content><![CDATA[
-<div class="checkbox">
+<div class="optionGroup">
 	<label>
-		<input type="checkbox" value="${1}">
-		${2:Checkbox}
+		<input type="checkbox" name="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Opt" id="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Opt" value="${2}">
+		${1:Checkbox}
 	</label>
 </div>
+<!-- ./optionGroup -->
 ]]></content>
-	<tabTrigger>i:checkbox</tabTrigger>
+	<tabTrigger>i:check</tabTrigger>
 </snippet>

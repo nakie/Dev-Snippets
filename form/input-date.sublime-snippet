@@ -1,6 +1,18 @@
 <snippet>
+	<!-- Snippet Purpose: Insert Native Date Form Field -->
+	<!-- Regex Pattern -->
+	<!-- ${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g} -->
+	<!-- Converts Proper Spacing and Case into Camel Case -->
+	<!-- E.G.  Agent First Name becomes agentFirstName -->
+	<!-- This allows automatic creation of ID's and Field Names from Label!!!!!!!! -->
+
 	<content><![CDATA[
-<input type="date" name="${1}" id="${1}Date" class="form-control" ${2:value="${3}"} ${4:required="required"} ${5:title="${6}"}>
-]]></content>
-	<tabTrigger>input:date</tabTrigger>
+
+<div class="inputGroup">
+	<label for="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}" >${1}</label>	
+	<input type="date" name="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}" id="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}" ${2:value="${3}"} ${4:required="required"} >
+</div>
+]]>
+</content>
+	<tabTrigger>i:date</tabTrigger>
 </snippet>
