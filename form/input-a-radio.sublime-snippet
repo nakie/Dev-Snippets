@@ -7,10 +7,9 @@
 	<!-- This allows automatic creation of ID's and Field Names from Label!!!!!!!! -->
 
 	<content><![CDATA[
-
 <label>
-	<input type="radio" name="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Opt" id="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Opt" value="${2}">
-	${1:Radio Button}
+	<input type="radio" name="${1}" class="${3/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Opt" value="${2}">
+	${3:Radio Button}
 </label>
 
 ]]></content>

@@ -9,8 +9,9 @@
 	<content><![CDATA[
 <div class="inputGroup">
 	<label for="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Num" >${1}</label>	
-	<input type="number" name="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Num" id="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Num" ${2:value="${3}"} ${4:min="${5}"} ${6:max="${7}"} ${8:step="${9}"} ${10:required="required"} >
+	<input type="number" name="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}" id="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Num" ${2:value="${3}"} ${4:min="${5}"} ${6:max="${7}"} ${8:step="${9}"} ${10:required="required"} >
 </div>
+<!-- ./ inputGroup -->
 
 ]]></content>
 	<tabTrigger>i:num</tabTrigger>

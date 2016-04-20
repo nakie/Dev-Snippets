@@ -9,10 +9,8 @@
 	<content><![CDATA[
 <div class="inputGroup">
 	<label for="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Txt" >${1}</label>	
-	<input type="text" name="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Txt" id="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Txt" ${2:value="${3}"} ${4:required="required"} ${5:pattern="${6}"}>
+	<input type="text" name="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}" id="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Txt" ${2:value="${3}"} ${4:required="required"} ${5:pattern="${6}"}>
 </div>
-
-${1/^(\w+)\s|?:(w+)\s/(?1\l$1:)(?2\u$2:)/g}
 <!-- ./inputGroup -->
 
 ]]></content>

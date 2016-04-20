@@ -3,6 +3,8 @@
 <select name="${1}" id="input${1/(\w+)/\u\1/g}" ${2:required="required"}>
 	<option value="">${0}</option>
 </select>
+<!-- ./ select ${1} -->
+
 ]]></content>
 	<tabTrigger>select</tabTrigger>
 </snippet>

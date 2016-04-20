@@ -8,7 +8,7 @@
 	<content><![CDATA[
 <div class="inputGroup">
 	<label for="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Tel" >${1}</label>	
-	<input type="tel" name="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Tel" id="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Tel" ${2:value="${3}"} ${4:required="required"} >
+	<input type="tel" name="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}" id="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Tel" ${2:value="${3}"} ${4:required="required"} >
 </div>
 <!-- ./inputGroup -->
 

@@ -6,6 +6,8 @@
 
 	<button type="${3:submit|button}" class="submitBtn">${4:Submit}</button>
 </form>
+<!-- ./ form.formBody -->
+
 ]]></content>
 	<tabTrigger>frm</tabTrigger>
 </snippet>

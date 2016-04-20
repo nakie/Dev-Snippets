@@ -2,6 +2,7 @@
 	<!-- Snippet Purpose: Insert Select Box Form Field -->
 	<content><![CDATA[
 <button type="submit" class="submitBtn">${5:Submit}</button>
+
 ]]></content>
 	<tabTrigger>i:submit</tabTrigger>
 </snippet>

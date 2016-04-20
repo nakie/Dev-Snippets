@@ -3,6 +3,8 @@
 <div class="inputGroup">
 	${0}
 </div>
+<!-- ./ inputGroup -->
+
 ]]></content>
 	<tabTrigger>frm:group</tabTrigger>
 </snippet>

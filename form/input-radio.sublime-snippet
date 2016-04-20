@@ -8,13 +8,15 @@
 
 	<content><![CDATA[
 <div class="optionGroup">
+	${1:<label class="optionTitle">${2}</label>}
 	<label>
-		<input type="radio" name="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Opt" id="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Opt" value="${2}">
-		${1:Radio Button}
+		<input type="radio" name="${3}" class="${5/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Opt" value="${4}">
+		${5:Radio Button}
 	</label>
-	${0}
+	${6}
 </div>
-
+<!-- ./ optionGroup -->
+${0}
 ]]></content>
 	<tabTrigger>i:radio</tabTrigger>
 </snippet>

@@ -6,9 +6,7 @@
 	<!-- E.G.  Agent First Name becomes agentFirstName -->
 	<!-- This allows automatic creation of ID's and Field Names from Label!!!!!!!! -->
 	<content><![CDATA[
-
 <option value="${1:Value}">${2:Display Text}</option>
-
 
 ]]></content>
 	<tabTrigger>i:aselect</tabTrigger>

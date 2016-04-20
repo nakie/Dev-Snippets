@@ -8,12 +8,15 @@
 
 	<content><![CDATA[
 <div class="optionGroup">
+	${1:<label class="optionTitle">${2}</label>}
 	<label>
-		<input type="checkbox" name="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Opt" id="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Opt" value="${2}">
-		${1:Checkbox}
+		<input type="checkbox" name="${3}" class="${5/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Opt" value="${4}">
+		${5:Checkbox}
 	</label>
+	${6}
 </div>
-<!-- ./optionGroup -->
+<!-- ./ optionGroup -->
+${0}
 ]]></content>
 	<tabTrigger>i:check</tabTrigger>
 </snippet>

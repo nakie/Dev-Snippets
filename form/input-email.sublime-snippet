@@ -8,21 +8,9 @@
 
 	<content><![CDATA[
 <div class="inputGroup">
-	<label for="${1/(\w+)\s/\u\1/g}Eml" >${1}</label>	
-	<input type="email" name="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Eml" id="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Eml" ${2:value="${3}"} ${4:required="required"} >
+	<label for="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Eml" >${1}</label>	
+	<input type="email" name="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}" id="${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}Eml" ${2:value="${3}"} ${4:required="required"} >
 </div>
-
-${1/(\w+)\s/\u\1/g} - origional
-
-${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g} - Current Broken
-${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g} - testing Broken
-
-${1/^(\w)|(?:_(\w))/(?1\u$1:)(?2 \u$2:)/g} - Snail Case from Docs
-
-${1/^(\w)\s|(?:(\w)\s)/(?1\u$1:)(?2 \u$2:)/g} - Test2
-
-
-..${1/^(\w+)|(?:\s(\w+))(\s+)?/(?1\l$1:)(?2\u$2:)/g}
 <!-- ./inputGroup -->
 
 ]]></content>
